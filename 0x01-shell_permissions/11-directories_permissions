@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +x $PWD
+chmod -R $PWD
