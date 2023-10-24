@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod -R 755 $PWD
+find . -type d -exec chmod a+x -- {} +\
