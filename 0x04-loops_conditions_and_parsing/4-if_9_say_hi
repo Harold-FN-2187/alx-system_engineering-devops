@@ -2,13 +2,12 @@
 
 kount=0
 
-while [ $kount -lt 10 ]
+while [ $kount -lt 10]
 do
-	echo "Best School"
-	(( kount++ ))
-	if [ $kount -eq 9 ]
-	then
-		echo "Hi"
-	fi
+    if [ $kount -eq 9 ]
+    then
+        echo "Hi"
+    fi
+    echo "Best School"
+    (( kount++ ))
 done
-		
