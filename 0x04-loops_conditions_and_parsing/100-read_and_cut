@@ -1,1 +1,8 @@
 #!/usr/bin/env bash
+# Script that displays the content on /etc/passwd
+# Displaying only username, userid, home directory path
+
+while read -r pass;
+do
+    echo "$pass" | cut -d ':' -f1,3,6
+done < "/etc/passwd"

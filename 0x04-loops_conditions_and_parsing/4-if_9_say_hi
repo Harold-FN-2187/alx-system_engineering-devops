@@ -2,7 +2,7 @@
 
 kount=0
 
-while [ $kount -lt 10]
+while [ $kount -lt 10 ]
 do
     if [ $kount -eq 9 ]
     then
