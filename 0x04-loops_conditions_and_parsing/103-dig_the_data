@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# Parse Apache log file
-# Grps by IP and HTTP status code
-# Sorts number of occurences
+# Parses Apache log files in a list format
+# Grps by IP, HTTP status code
 
 awk '{ print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn
