@@ -1,1 +1,11 @@
 #!/usr/bin/env bash
+# Tells a story
+# Based on the contents of '/etc/passwd'
+
+while IFS=':' read username password uid guid info home shell;
+do
+    echo "The user $username is part of the $guid gang."\
+    "lives in $home and rides $shell."\
+    "$uid's plce is protected by the passcode $password,"\
+    "more info about the use here: $info"
+done < "/etc/passwd"
