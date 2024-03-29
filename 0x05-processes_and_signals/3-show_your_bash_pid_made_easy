@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# show PID with proc name containing "bash"
+
+pgrep -l bash
